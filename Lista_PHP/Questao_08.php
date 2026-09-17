@@ -1,6 +1,6 @@
 <?php
 
-$numero = 4;
+$numero = 5;
 $resposta = 1;
 
 for($i=$numero; $i > 0; $i--){
