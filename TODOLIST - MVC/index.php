@@ -1,0 +1,21 @@
+<?php
+
+require_once __DIR__ . '/app/controller/controller.php';
+
+$controller = new tarefaController();
+
+$action = $_GET['action'] ?? 'index';
+
+switch ($action) {
+    case 'criar':
+        $controller->criar();
+        break;
+    case 'excluir':
+        echo "chegou aqui" . $_GET['action'];
+        $controller->excluir();
+        break;
+    default:
+        $controller->index();
+}
+
+?>
